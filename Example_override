@@ -1,0 +1,17 @@
+public class Estudiante extends Persona{
+    private String escuela;
+    
+    public Estudiante(String nombre,int edad,String escuela){
+        super(nombre, edad);
+        this.escuela = escuela ; 
+    }
+
+    @Override
+    public String getInfo(){
+        return super.getInfo() +" - "+ this.getSchool() ; 
+    }
+    public String getSchool(){
+        return "Escuela: "+ this.escuela ;
+    }
+    
+}
